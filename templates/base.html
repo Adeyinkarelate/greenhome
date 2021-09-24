@@ -60,6 +60,12 @@
         <li class="nav-item eportal">
           <a class="nav-link" href="{%  url 'aworld:contact' %}">Contact</a>
         </li>
+
+        {% if user.is_authenticated %}
+        <li class="nav-item con">
+          <a class="nav-link" href="/admin/login/?next=/admin/">Admin Login</a>
+        </li>
+        {% endif %}
        
       </ul>
     </div>
