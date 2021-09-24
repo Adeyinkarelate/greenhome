@@ -1,0 +1,302 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+<style>
+    *{
+        text-decoration: none;
+    }
+    #enroll{
+   background: url("/static/images/image-5.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   block-size: cover;
+   background-repeat: no-repeat;
+   background-size:cover;
+   box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.4);
+   padding: 80px 0px;
+   height: 400px;
+  
+  }
+
+ #enroll h5{
+    font-size: 20px;
+    font-family: 'Castoro', serif;
+    letter-spacing: 2;
+    color:rgb(241, 145, 0) !important;
+ }
+ #enroll h5 a{
+    text-decoration: none;
+    color: #fff !important;
+ }
+ /* ============================== */
+ .services-section{
+	position:relative;
+	padding:100px 0px 60px;
+}
+
+.default-services-block{
+	position:relative;
+	margin-bottom:40px;	
+}
+
+.default-services-block .inner-box{
+	position:relative;
+	display:block;	
+}
+
+.default-services-block .image-box{
+	position:relative;
+	display:block;
+	width:100%;
+	overflow:hidden;	
+}
+
+.default-services-block .image-box img{
+	display:block;
+	width:100%;	
+}
+
+.default-services-block .image-box .overlay-box{
+	position:absolute;
+	left:0px;
+	top:-100%;
+	width:100%;
+	height:100%;
+	color:#ffffff;
+	background:rgba(252,114,30,0.90);
+	transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	-moz-transition:all 500ms ease;	
+}
+
+.default-services-block:hover .image-box .overlay-box{
+	top:0px;	
+}
+
+.default-services-block .image-box .overlay-box .fa{
+	position:absolute;
+	left:50%;
+	margin-left:-12px;
+	top:50%;
+	margin-top:-12px;
+	font-size:20px;
+	width:24px;
+	height:24px;
+	line-height:24px;	
+}
+
+.default-services-block .lower-content{
+	position:relative;
+	padding:25px;
+	background:#ffffff;
+	border:1px solid #e9e9e9;
+	border-top:none;
+	transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	-moz-transition:all 500ms ease;		
+}
+
+.default-services-block:hover .lower-content{
+	background: #ffa84c; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #ffa84c 0%, #ff7b0d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #ffa84c 0%,#ff7b0d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #ffa84c 0%,#ff7b0d 100%);
+
+    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+}
+
+.default-services-block .lower-content .transparen-icon{
+	position:absolute;
+	right:10px;
+	bottom:10px;
+	line-height:1em;
+	font-size:64px;
+	color:#faf9f9;	
+}
+
+.default-services-block .lower-content h3{
+	font-size:20px;
+	font-weight:600;
+	text-transform:capitalize;
+	margin-bottom:10px;
+	color:#272727;	
+}
+
+.default-services-block .lower-content h3 a{
+	color:#272727;		
+}
+
+.default-services-block .lower-content .text{
+	font-size:15px;
+	line-height:1.8em;
+	margin-bottom:15px;	
+}
+
+.default-services-block .lower-content .read-more{
+	position:relative;
+	display:inline-block;
+	font-family:'Montserrat',sans-serif;
+	color:#272727;
+	font-weight:600;
+	text-transform:uppercase;	
+}
+
+.default-services-block .lower-content .read-more:hover,
+.default-services-block .lower-content h3 a:hover{
+	color:#fc721e;	
+}
+
+
+
+ 
+   
+</style>
+<!-- =================================== -->
+<div class="row mb-4 justify-content-center text-center">
+    <div class="col-sm-12 " id="enroll">
+      <div class="con-2 pt-5">
+      <h3 class="text-light text-center lg-mt-5 text-justify " style="font-size: 30px;"> Services</h3>
+     <h5 class=" text-light" style="width: 70%; margin:auto;"> 
+        <a href="{% url 'aworld:index' %}">Home</a> | Services</h5>
+      </div>
+    </div>
+</div>
+<!-- ============================== -->
+<!--Services Section-->
+<section class="services-section p-5">
+    <div class="auto-container">
+        
+        <div class="row clearfix">
+            
+            <!--Service Block-->
+            <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    
+                    <div class="lower-content">
+                        <div class="transparen-icon"><span class="flaticon-improvement"></span></div>
+                        <h3>Repairs and Maintenance Services</h3>
+                        <div class="text text-justify">There is always need for minor repairs to prevent degeneration or dilapidation of materials most especially homes where children are, to them everything is a toy and they will never stop exploring with whatever comes in contact with them, walls are stained with colourings, oily or greasy fingers, windows/blinds and slides got twingled, control ropes cut, tiles and marbles broken, drapes and curtains pierced or cut through with scissors, P.O.P ceilings, beams and pillars broken or damaged, hanging brackets pulled from the walls making the whole rooms untidy.</div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!--Service Block-->
+            <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    
+                    <div class="lower-content">
+                        <div class="transparen-icon"><span class="flaticon-layers"></span></div>
+                        <h3>Sales and Supply</h3>
+                        <div class="text text-justify">We offer sales and supply of semi-heavy and light furnishing material for homes and workplaces – wholesales and retails such as window blinds, drapes & curtains, throw pillows, bed sheets, cushions, art frames, flowers and vases, rugs and carpets. Please see our product and service range page. Our products and services are a top-notch meeting international standards (ISO), the most sophisticated lifestyles as well as eco-friendly.</div>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <!--Service Block-->
+            <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    
+                    <div class="lower-content">
+                        <div class="transparen-icon"><span class="flaticon-compass"></span></div>
+                        <h3>Deliveries and Installations</h3>
+                        <div class="text text-justify">AWORLD GREENER HOMES offers door to door step delivery to potential customers/clients to save time, energy as well secure your items from sudden damage on transit, all to the comfort of prospective customers. Delivery is to the discretion of customers. They can come for pick-ups from the store or outlets. Deliveries can be within 24/72hrs depending on the bulk nature of products (items) and services. In some cases, we advise clients/customers to apply for installation for a perfect finish. </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!--Service Block-->
+            <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    
+                    <div class="lower-content">
+                        <div class="transparen-icon"><span class="flaticon-tiles"></span></div>
+                        <h3>Window blinds &amp; Slides</h3>
+                        <div class="text text-justify">There are different types of window blinds like the roller blinds, PVC, Day & Night, Romans, Mat, wooden, vertical fabrics and the Venetians. Their operations or mechanisms are simple either a horizontal or vertical motion which can be simultaneous or spontaneous. </div>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <!--Service Block-->
+            <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <figure class="image-box"><img src="{% static '/resource/service-image-5.jpg' %}" alt=""><a href="service-single.html" class="overlay-box"><span class="fa fa-link"></span></a></figure>
+                    <div class="lower-content">
+                        <div class="transparen-icon"><span class="flaticon-two"></span></div>
+                        <h3>Drapes &amp; Curtains</h3>
+                        <div class="text text-justify">GH HOMES have a whole lots of thermal blackout fabrics that are made into designs or ready made grommet swaffle drapes and curtains for best window coverings to suit your lifestyle and taste. Blackout curtains and drapes come as damask, jakkard, silk, satin, linen, cotton, Irish voil fabrics for window covering. Our drapes and curtains come in plain colour-shades and patterns orders are made by clients according to window sizes and specifications.</div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!--Service Block-->
+            <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    
+                    <div class="lower-content">
+                        <div class="transparen-icon"><span class="flaticon-bright-lightbulb"></span></div>
+                        <h3>3D Wall Panel &amp; 2D Wall finish</h3>
+                        <div class="text text-justify">We can transform the worst interiors or decorations as walls receive the best treatments turning into a magnificent fine or sculptural art gallery or into world class artifacts with our top-notch 2 or 3D art designs, creating sensual dominating, elegant and warm effects to become liveable again. Wallpapers can be removed and replaced with new ones while our 3D Top-notch wall panels are re-coated (painted) to suit your vision, taste and lifestyle. They are durable and very affordable, Easy to carry.</div>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <!--Service Block-->
+            <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                 
+                    <div class="lower-content">
+                        <div class="transparen-icon"><span class="flaticon-houses"></span></div>
+                        <h3>Throws, Cushions, Beem-Bags, &amp; Table Clothes</h3>
+                        <div class="text text-justify">These are made of fabrics or leather materials, fabrics like satin, silk, linen, damask, jakard, velvetin, codroy, terfetas. In some cases they are made of pure cotton or polyester or a combination of the two for body, skin and eco-friendly. Apart from having the best designs and colors to suit customers needs and taste
+                            AG HOMES furnishing materials are carefully sourced from renowned manufacturers. Our products are the best, they don't bleach, wear or tear under extreme weather conditions. 
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <!--Service Block-->
+            <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                   
+                    <div class="lower-content">
+                        <div class="transparen-icon"><span class="flaticon-parquet"></span></div>
+                        <h3>Upholstery</h3>
+                        <div class="text">We have the best upholstery products and materials in the world. Our fabrics and leather materials are premium quality sourced from renown manufacturers across the world. Sofas and chairs have the best filling, stuffing and covering. AG HOMES sofas and chairs don't compress under weight, they are made of flexible and elastic materials for all purposes – from sitting to sleeping on. Our filling or stuffing is 100% fibre while in few cases a 10 – 20% less according to customer's requirement, specifications or use.  </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!--Service Block-->
+            <div class="default-services-block col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    
+                    <div class="lower-content">
+                        <div class="transparen-icon"><span class="flaticon-copy"></span></div>
+                        <h3>Rugs & Carpets</h3>
+                        <div class="text">Our Exotic elegant and cosy carpets come in excellent designs and colours with smooth and warm feeling. Made of fibre, jute, Bamboo or animal furs – synthetic or natural. In some cases carpets are carefully trimmed to size. Centre, walk-way and praying rugs come in customized sizes like 3×5, 4×6, 5×7, 5×8, 6×8, 9×12, 3×12. We have the best carpets and rugs in the world. They do not bleach, wear or tear. Dust or wash with soap or detergents, manual or machine wash is ideal.</div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+<!-- -------------------------------- -->
+
+{% endblock main %}

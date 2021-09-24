@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    user-select: none;
+    
+}
+            /* ====================================================
+                        GENERAL STYLYING
+            ============================================ */
+body{
+    background-color: #fff!important;
+    overflow-x: hidden;
+}
+
+
+:root{
+    /* the navbar */
+    --navBackgroundColor:#000;
+    --navlinkColor:#fff;
+    --navlinkactiveColor:#df7722;
+    --navtogglerColor:#df7722;
+    /* end */
+    /* .dropdown-menu */
+        --dropdownMenuBackground:#df7722;
+        --dropDownItemColor:#fff;
+    /* .dropdown-menu */
+    --color:#df7722;
+    --link:#df7722;
+    --border :#000;
+    --hover: #df7722;
+    --border:#fff;
+    --textColor: #000;
+    --backgroundColor:#df7722;
+}
+
+h1,h2,h3,h4,h5,h6, strong{
+    font-family: 'Castoro', serif;
+    letter-spacing: 2;
+}
+p{
+    letter-spacing: 2;
+    line-height: 30px;
+}
+
+ body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: black;
+    outline: 1px solid #df7722;
+  } 
+
+  .bgcolor.scrolled{
+    background-color: black!important;
+    box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.27);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.27);
+ 
+  }
+ 
+
+            /* ====================================================
+                        END STYLYING
+            ============================================ */
+
+.navbar {
+ 
+    background-color: black!important;
+    box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.27);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.27);
+   
+}
+.navbar .navbar-nav a{
+    color: var(--navlinkColor) !important;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: 30px;
+    font-weight: 900;
+    
+    
+}
+
+.navbar .navbar-toggler{
+    background-color:var(--navtogglerColor) !important;
+    border: 2px solid #fff;
+}
+.navbar .navbar-nav a:hover{
+    color: var(--navlinkactiveColor) !important;
+    border-bottom: 3px solid #fff;
+    transition: all .5s;
+}
+
+ .nav-item li .active {
+    border-bottom: 3px solid #df7722;
+    
+}
+.dropdown-menu{
+    background-color: var(--dropdownMenuBackground) !important; 
+    border: 3px solid black;
+    padding: 0px;
+}
+.dropdown-menu .dropdown-item{
+    color: var(--dropDownItemColor) !important;
+    border-top: 3px solid black;
+
+}
+.dropdown-menu .dropdown-item:hover{
+    padding-top: 0px ;
+     padding-top: 0px ;
+
+}
+.navbar .navbar-nav .eportal{
+    margin-left: 60px;
+    border: #df7722 2px solid;
+ }
+
+.btn{
+    background-color: rgb(241, 145, 0);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+  text-decoration: none;
+}
+.btn a{
+    font-weight: 300px;
+}
+
+.btn {
+    transition-duration: 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: rgb(252, 176, 35); /* Green */
+    color: white;
+    font-weight: bold;
+  }
+
+  /* =========================FOOTER=================================== */
+  /* footer */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    overflow-x:hidden;
+    user-select: none;
+} */
+
+
+.footer-top{
+    background: #111;
+    padding: 10px 0;
+}
+.segment-one , .segment-two , .segment-three , .segment-four p{
+  font-size: 13px;
+  color:#fff;
+}
+.segment-one h3{
+  font-family: 'Courgette', cursive;
+  color:#fff;
+  letter-spacing: 3px;
+  
+}
+.segment-two h2{
+  font-family: 'Castoro', serif;
+  color:#fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin:5px 0;
+}
+.segment-two h2:after{
+    content: " ";
+    display:block; /* So we can set a width */
+    width: 85px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: rgb(241, 145, 0);
+    margin-top: 8px;
+}
+
+.segment-two ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.segment-two ul li{
+ 
+  line-height: 40px;
+}
+.segment-two ul li a{
+ 
+ text-decoration: none;
+ font-size: 13px;
+ color:#fff;
+}
+
+.segment-three h2{
+  font-family: 'Castoro', serif;
+  color:#fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin:5px 0;
+}
+.segment-three h2::after{
+    content: " ";
+    display:block; /* So we can set a width */
+    width: 85px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: rgb(241, 145, 0);
+    margin-top: 8px;
+}
+
+
+.segment-three a i:hover{
+  transform: rotate(45deg);
+  transition: all 0.5s;
+
+}
+
+.segment-three a i {
+  font-size: 15px;
+  color:#fff;
+  padding: 10px 12px;
+  
+}
+.segment-four h2{
+  font-family: 'Poppins', sans-serif;
+  color:#fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin:10px 0;
+}
+
+.segment-four h2:before{
+  
+  content:'|';
+  color:rgb(241, 145, 0);
+  padding-right: 10px;
+}
+.footer-bottom-text{
+  text-align: center;
+  background: #000;
+  line-height: 70px;
+
+}
+/* responsive css */
+@media only screen and (min-width:768px) and (max-width:991px){
+  .md-mb-30{
+    margin-bottom: 30px;
+  }
+  /* from index */
+
+}
+
+@media only screen and (min-width:767px){
+  .sm-mb-30{
+    margin-bottom: 30px;
+  }
+  .footer-top{
+    padding: 30px 0;
+  }
+}

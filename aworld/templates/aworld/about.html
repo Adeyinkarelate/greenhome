@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+<style>
+    *{
+        text-decoration: none;
+    }
+    #enroll{
+   background: url("/static/images/image-5.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   block-size: cover;
+   background-repeat: no-repeat;
+   background-size:cover;
+   box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.4);
+   padding: 80px 0px;
+   height: 400px;
+  
+  }
+
+ #enroll h5{
+    font-size: 20px;
+    font-family: 'Castoro', serif;
+    letter-spacing: 2;
+    color:rgb(241, 145, 0) !important;
+ }
+ #enroll h5 a{
+    text-decoration: none;
+    color: #fff !important;
+ }
+ /* ============our servuce ================ */
+ #service h2::after{
+    content: " ";
+    display:block; /* So we can set a width */
+    width: 85px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: rgb(241, 145, 0);
+    margin-top: 8px;
+}
+.box{
+    border: 3px solid rgb(182, 182, 182);  
+}
+/* =================our vision=================== */
+.tesimony{
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffa84c+0,ff7b0d+100;Orange+3D */
+    background: #fff; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #fff 0%, #fff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #fff 0%,#fff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #fff 0%,#fff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+     padding:15px;
+     width: fit-content;
+   
+
+     box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+
+
+ }
+ /* ==== */
+ 
+   
+</style>
+
+
+<!-- =============== -->
+<div class="row mb-4 justify-content-center text-center">
+    <div class="col-sm-12 " id="enroll">
+      <div class="con-2 pt-5">
+      <h3 class="text-light text-center lg-mt-5 text-justify " style="font-size: 30px;"> About Us</h3>
+     <h5 class=" text-light" style="width: 70%; margin:auto;"> <a href="{% url 'aworld:index' %}">Home</a> |  About</h5>
+      </div>
+    </div>
+</div>
+<!-- ====================our story=================================== -->
+<div class="container p-5">
+    <div class="row mb-4">
+        <div class="col-sm-12 col-md-8  py-3" id="service">
+            <h2 class="my-3">Our Story</h2>
+            <p class="text-justify " style="letter-spacing: 2;"> <b><i>AWORLD GREENER HOMES</i></b> is an Interior Design, Decoration and Real Estate company that specializes in furnishing homes and workplaces with semi-heavy and light furnishing materials. AWORLD GREENER HOMES offers the sales and supply of decorative and furnishing materials to clients and potential customers of the most valuable, reliable, durable, accessible, magnificent and elegant materials. We offer top-notch products and services to bring about the most luxurious, cosy furnishings for the real comfort and satisfaction of clients and sundry customers thereby ending their long awaited frustrations and deprivations towards embracing their dream homes and workplaces through our expert service,</p>
+
+            <p class="text-justify" style="letter-spacing: 2;"> we deliver on all budgets by our broad management approach no matter how meagre your budget is we are poised to giving you the best by arriving at the same results just as in bogus budgets through innovation and creativity, bringing the most appealing and inviting ambience to your home or work place. AG Homes have answers to every home interior needs and this is made possible by our management skills and team of experts. Our versatility in this industry and in real estate business is quite encompassing to meet the interior needs of clients and their lifestyles. AG Homes besides offers sales, letting, leasing of properties, land and property procurements for residential and commercial purposes.</p>
+        </div>
+        <div class="col-sm-12 col-md-4   py-3 ">
+            <div class="box pb-4 pt-3 shadow">
+                <img src="{% static '/images/man.png' %}" class="d-block   ml-3  " alt="..."  class="shadow" style="width: 330px; height: 350px;">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ================================ -->
+<!-- =======================our vision===================== -->
+<div class="row mb-4 bg-light py-5">
+  
+    <div class="col-sm-12 col-md-8  text-center px-5 py-3 " >
+        <h2 class="my-3">Our Vision</h2>
+        <div class="tesimony p-5" >
+            <p class="text-justify"> To become the leading Interior Design, Decoration and Real Estate Company where excellent standards are always maintained without shortcuts or short changing in Service delivery so as to meet the needs and demands of clients and teeming potential customers through offering expertise service delivery – a top-notch in all ramifications as it involves our products and services through a team of diligent, skilful,</p>
+
+            <p class="text-justify p-2" style="border-left: 3px solid rgb(241, 145, 0) ;">
+                experienced and restraint, distancing us from compromising on quality of products and services therefore making our brand indispensable, reliable, accessible, durable, available and affordable to customers at all times. We are poised to delivering top-notch products and services to suit every class of people and their lifestyles as well.
+            </p>
+            <hr>
+          </div>
+    </div>
+    <!-- col-2 -->
+    <div class="col-sm-12 col-md-4 text-center px-5 py-3 " >
+        <h2 class="my-3">Our Integrity </h2>
+        <div class="con-2  p-5"  style="background: #000;">
+          <p class="text-center text-light" style="letter-spacing: 2;">We keep our word: we don't breach contracts and we give prompt delivery on all assigned duties or projects. We respond to orders as they come.</p>
+          </div>
+        </div>
+      
+  </div>
+  
+   
+{% endblock main %}
+
+

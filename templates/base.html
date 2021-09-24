@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aword Greener Homes | aworld decoration | aworld design | real estate |</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<!-- Stylesheets -->
+
+
+
+
+
+<!-- ==============google font============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap" rel="stylesheet">
+<!-- ======================================================= -->
+<!-- animate css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!-- ========================CUSTOM CSS================================== -->
+<link rel="stylesheet" href="{% static '/css/base.css' %}">
+<!-- =================== -->
+<!-- fontawsome key -->
+<script src="https://kit.fontawesome.com/e6bc8b7e05.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+    <!-- =======================navbar======================= -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bgcolor">
+    <div class="container">
+    <a class="navbar-brand text-light" href="{%  url 'aworld:index' %}"><img src="{% static '/images/awordre.png' %}" alt="" style="width: 110px; height: 50px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{%  url 'aworld:index' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%  url 'aworld:about' %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%  url 'aworld:gallery' %}">Gallery</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url 'aworld:service' %}">Service</a>
+      </li>
+        
+        <li class="nav-item eportal">
+          <a class="nav-link" href="{%  url 'aworld:contact' %}">Contact</a>
+        </li>
+       
+      </ul>
+    </div>
+</div>
+  </nav>
+<!-- ================================end nabv============ -->
+
+{% block main %} 
+
+{% endblock main %}
+
+
+<!-- ================================FOOTER================================ -->
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row mb-4">
+
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30 mb-4">
+          <img src="{% static '/images/awordre.png' %}" alt="" style="width: 110px; height: 50px;">
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30 mb-4">
+          <h2 class="my-3">Gallery Info</h2>
+        <ul>
+          <li><a href="{%  url 'aworld:about' %}">About</a></li>
+          <li><a href="{%  url 'aworld:gallery' %}">About</a></li>
+          <li><a href="{%  url 'aworld:service' %}">Service</a></li>
+          <li><a href="{% url 'aworld:contact' %}">Contact</a></li>
+        </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-three md-mb-30 sm-mb-30 mb-4">
+          <h2 class="my-3">Follow Us</h2>
+          <p>Ilo-Awela Road, off Tollgate, Otta, Ogun/Lagos states, Nigeria.</p>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a> 
+          <a href="#"><i class="fa fa-instagram"></i></a>        
+        </div>
+
+        
+
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30 mb-4">
+          <h2 class="my-3">Contact</h2>
+
+          <ul>
+            <li><span style="font-weight: bold; margin-right: 5px; font-size: 15px; color:rgb(241, 145, 0); "><i class="fas fa-envelope"></i></span><a  href = "mailto: art@moririgallery.ng"> aworldgreenerhomes@yahoo.com</a></li>
+            <li><span style="font-weight: bold; margin-right: 5px; font-size: 15px; color: rgb(241, 145, 0);"><i class="fas fa-phone"></i></span> +234 (0) 809 22 55 66 0</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <p class="footer-bottom-text">All Right reserved by &copy; <script>document.write(new Date().getFullYear());</script> Aworld Greener Homes.</p>
+</footer>
+<!-- ================================ END FOOTER================================ -->
+
+<!--=============== custom js ============== -->
+
+
+<script src="{% static '/js/index.js' %}"></script>
+
+
+<!-- ================================= -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+<script>
+
+  $(window).scroll(function(){
+      $('nav').toggleClass('scrolled', $(this).scrollTop()>50);
+  });
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+<style>
+    *{
+        text-decoration: none;
+    }
+    #enroll{
+   background: url("/static/images/image-5.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   block-size: cover;
+   background-repeat: no-repeat;
+   background-size:cover;
+   box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.4);
+   padding: 80px 0px;
+   height: 400px;
+  
+  }
+
+ #enroll h5{
+    font-size: 20px;
+    font-family: 'Castoro', serif;
+    letter-spacing: 2;
+    color:rgb(241, 145, 0) !important;
+ }
+ #enroll h5 a{
+    text-decoration: none;
+    color: #fff !important;
+ }
+ /* ====================== */
+ 
+
+  #con-2{
+      width:60%;
+  }
+  /* contact us  */
+  /* form */
+
+	.contact{
+		padding: 4%;
+		height: 400px;
+	}
+	.bb{
+		background: rgb(241, 145, 0) ;
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+	}
+	.contact-info{
+		margin-top:10%;
+	}
+	.contact-info img{
+		margin-bottom: 15%;
+	}
+	.contact-info h2{
+		margin-bottom: 10%;
+	}
+	.col-md-9{
+		background: #fff;
+		padding: 3%;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+	}
+	form label{
+		font-weight:600;
+	}
+	form .form-group button{
+		background: #25274d;
+		color: #fff;
+		font-weight: 600;
+	
+	}
+	form .form-group button:focus{
+		box-shadow:none;
+	}
+  /* form end */
+
+  /* media screen */
+  @media screen and (max-width:768px){
+
+#con-2{
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+
+  }
+}
+ 
+</style>
+
+<!-- =============== -->
+<div class="row mb-4 justify-content-center text-center">
+    <div class="col-sm-12 " id="enroll">
+      <div class="con-2 pt-5">
+      <h3 class="text-light text-center lg-mt-5 text-justify " style="font-size: 30px;"> Contact Us </h3>
+     <h5 class=" text-light" style="width: 70%; margin:auto;"> <a href="{% url 'aworld:index' %}">Home</a> |  Contact</h5>
+      </div>
+    </div>
+</div>
+<!-- ========================================= -->
+<div class="container-fluid ">
+    <div class="row my-2 justify-content-center text-center">
+        <div class="col-sm-12 " id="section3">
+          <marquee width="80%" direction="right" height="100px">
+            <div class="con-2">
+                <h3 class="animate__animated animate__fadeInUp animate__delay-1s text-center" style="font-weight: 900; color: #fff;"><span style="color: rgb(241, 145, 0) ;">Aword Greener Homes</span> </h3>
+                 <p class="text-center a1">Tell us what you are looking for and we will try and get back to you as soon as possible.</p>
+              </div>
+          </marquee>
+        </div>
+    </div>
+</div>
+<!-- second row -->
+<div class="container  my-5">
+<div class="row">
+    <div class="col-md-3 bb">
+        <div class="contact-info">
+            <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+            <h2>Contact Us</h2>
+            <h4>We would love to hear from you !</h4>
+  <p class="text text-light">Tel</p>
+      <p class="text-light">
+          <!-- (234) 909-9347-874 <br> -->
+          (234) 809-2255-660 <br>
+         
+      </p>
+      
+        </div>
+    </div>
+    <div class="col-md-9">
+      <form method="post">
+        {% csrf_token %}
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="fname">Full Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control"  placeholder="Enter Full Name" name="fname" required>
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="email">Email:</label>
+				  <div class="col-sm-10">
+					<input type="email" class="form-control"  placeholder="Enter email" name="email" required>
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="comment">Message:</label>
+				  <div class="col-sm-10">
+					<textarea class="form-control" rows="5"  name="comment"></textarea>
+				  </div>
+				</div>
+				<div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default">Send Message</button>
+				  </div>
+				</div>
+    </form>
+    </div>
+</div>
+</div>
+<!-- the ota map -->
+<div class="container-fluid my-5 shadow">
+<div class="row">
+<div class="col-sm-12">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.638764663732!2d3.2449811142670786!3d6.691586523044166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b99ca0197b4ed%3A0x3dcc5b991693734!2sIlo%20Awela%20Rd%2C%20Ota!5e0!3m2!1sen!2sng!4v1624887657651!5m2!1sen!2sng" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</div>
+</div>
+
+<!-- ======================================= -->
+
+{% endblock main %}
+
+
