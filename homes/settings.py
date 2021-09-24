@@ -33,7 +33,7 @@ SECRET_KEY = '0vh2a43mxi5-fz=x!-w5u*h5-25-km4h6^&4-o^8%5mz6p0t$-'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['aworldgreenerhomes.herokuapp.com','127.0.0.1']
 
@@ -54,7 +54,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -158,7 +158,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 
