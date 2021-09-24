@@ -33,9 +33,10 @@ SECRET_KEY = '0vh2a43mxi5-fz=x!-w5u*h5-25-km4h6^&4-o^8%5mz6p0t$-'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aworldgreenerhomes.herokuapp.com','127.0.0.1']
+
 
 
 # Application definition
